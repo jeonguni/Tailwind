@@ -54,7 +54,8 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function ({ addComponents }) {
+    plugin(function ({ addComponents, theme }) {
+      //theme 에 만든 변수를 사용하려면 플러그인에 theme 선언해주어야 함
       addComponents({
         '.disabled': {
           opacity: '20%',
